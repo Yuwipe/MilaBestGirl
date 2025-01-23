@@ -7,12 +7,6 @@ body {
     overflow-x: hidden;
   }
   
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
   /* Top Bar Navigation */
 * {
     scroll-behavior: smooth;
@@ -31,12 +25,14 @@ body {
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    text-shadow: 2px 2px #000;
+    font-size: 20px;
 }
   
 .topnav a:hover {
     background-color: #ff7bc8;
     color: #000;
+    text-shadow: none;
 }
   
 .topnav a.active {
@@ -200,10 +196,14 @@ footer {
   z-index: 1000;
   text-align: center;
   color: #ecf0f1;
+  text-shadow: 2px 2px #000;
 }
 
 .images {
   padding: 3px 3px;
+}
+.images:hover {
+  transform: translateY(-10px);
 }
 
 .centerdiv {
